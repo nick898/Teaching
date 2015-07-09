@@ -1,0 +1,128 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{bigints}
+\usepackage{parskip}
+\usepackage{amssymb}
+\usepackage{relsize}
+\usepackage{fullpage}
+% \DeclareMathSizes{12}{17.28}{9}{7} % (a)
+
+\DeclareMathSizes{12}{17.28}{12}{12} % (a)
+
+
+\usepackage{hyperref}
+
+
+
+	\addtolength{\topmargin}{-.5in}
+	\addtolength{\textheight}{1.75in}
+
+
+
+    \newenvironment{myindentpar}[1]%
+     {\begin{list}{}%
+             {\setlength{\leftmargin}{#1}}%
+             \item[]%
+     }
+     {\end{list}}
+
+\begin{document}
+\title{College Algebra: Module 13 What You Need To Know}
+\date{3-28-15}
+\author{}
+\maketitle
+
+\section{Solving Exponential and Logarithmic Equations (Section 5.5)}
+
+\underline{\textbf{NOTE:}} When solving logarithmic equations you \textbf{need to check your answers}. Sometimes, when solving logarithmic equations you get extra solutions that \textbf{do not} satisfy the original equation. The following properties about logarithms are often used in the process of solving logarithmic equations. Some of these properties you've seen from last week. Others, such as the Uniqueness Property, are new.
+
+\textbf{Logarithm to Exponential Conversion:}
+\newline
+
+\centerline{$y = \text{log}_{b}(x) \Leftrightarrow x = b^{y}$}
+
+\textbf{Uniqueness Property of Logarithms}
+\newline
+
+\centerline{$\log_{b}(m) = \log_{b}(n) \implies m = n$}
+
+\textbf{Important Properties of Logs:} 
+\begin{myindentpar}{2cm}
+\begin{enumerate}
+\item $\log_{b}(b^{x})= x$
+\item $\log_{b}(x \cdot y) = \log_{b}(x) + \log_{b}(y)$ 
+\item $\log_{b}\Big(\dfrac{x}{y}\Big) = \log_{b}(x) - \log_{b}(y)$
+\item $\log_{b}(x^{p}) = p \cdot \log_{b}(x)$
+\end{enumerate}
+\end{myindentpar}
+
+\textbf{Solving Exponential Equations} 
+
+There are, in general, two ways we'll talk about solving exponential equations. The two methods we'll discuss in discussion involve
+
+\begin{enumerate}
+
+\item Taking the logarithm of both sides of the equation
+\item U-Substitution and Quadratic Factoring
+
+\end{enumerate}
+
+Often times when given an equation and asked to solve for a variable $x$ such as $5^{x+1} = 6^{2x}$ this can be solved by taking the natural log on both sides which will make it easier to solve. Or you might be given an equation such as $10^{2x} + 10^{x} - 6 = 0$ which \textit{looks similar to} a quadratic equation. For something like this, the second method using U-Substitution and Quadratic Factoring will be the method you should use. We will go over examples in discussion with these.
+
+\section{Applications from Business, Finance, and Science (Section 5.6)}
+
+\underline{\textbf{NOTE:}} These are really the only two formulas you need to know for this section. One is the Compound Exponential Growth/Decay formula and the other is the formula for \textit{Continuously}  Compounded Exponential Growth/Decay. If the directions in the problem tell you that there is \textbf{continuous growth/decay} then you'll want to use the Continuously  Compounded Exponential Growth/Decay formula. Otherwise, you'll use just the Compound Exponential Growth/Decay formula. The key is to read through the problem carefully and understand what you're being asked to solve for and what is the actual information you're being given. 
+
+\textbf{Compound Exponential Growth/Decay:}
+\newline
+
+\centerline{$A = P\Big(1 + \dfrac{r}{n}\Big)^{nt}$}
+
+where $A = $ Final Amount
+
+\hspace{1cm} $P = $ Principal (Original) Amount
+
+\hspace{1.2cm} $r = $ Rate
+
+\hspace{1.2cm} $n = $ Number of times per year compounded
+
+\hspace{1.2cm} $t = $ Time in years
+
+\vspace{1cm}
+
+\textbf{Continously Compounded Exponential Growth/Decay:}
+\newline
+
+\centerline{$A = Pe^{rt}$}
+
+where $A = $ Final Amount
+
+\hspace{1cm} $P = $ Principal (Original) Amount
+
+\hspace{1.2cm} $r = $ Rate
+
+\hspace{1.2cm} $t = $ Time in years
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

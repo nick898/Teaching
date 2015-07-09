@@ -1,0 +1,199 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{bigints}
+\usepackage{parskip}
+\usepackage{amssymb}
+
+    \newenvironment{myindentpar}[1]%
+     {\begin{list}{}%
+             {\setlength{\leftmargin}{#1}}%
+             \item[]%
+     }
+     {\end{list}}
+
+\begin{document}
+\title{Completing the Square}
+\date{}
+\author{}
+\maketitle
+
+
+Completing the square is a useful mathematical technique to know how to do. We've already seen it come up in class multiple times. In this, I'm going to walk you through how to complete the square.
+We complete the square on quadratic equations of the form
+\newline
+
+\centerline{$f(x)= ax^2 + bx + c$}
+\vspace{.5cm}
+
+In my first example I'm going to show you how to complete the square on a quadratic equation where the coefficient of $x^2$ is just $1$. So it is of the form
+\newline
+
+\centerline{$f(x)= x^2 + bx + c$}
+\vspace{.5cm}
+
+This is the simplest case.
+
+In my second example I'm going to show you how to complete the square where the coefficient of $x^2$ is not $1$. So it is of the form
+\newline
+
+\centerline{$f(x)= ax^2 + bx + c$ \hspace{2cm} $a \neq 1$}
+\vspace{.5cm}
+
+Finally, in my third example I'm going to show you how to complete the square and solve for x. This is the same thing as finding the \textit{roots} also known as the \textit{x-intercepts} of a quadratic function. That is, we are finding the $x$-values where the function is zero. The quadratic formula is a formula that does the exact same thing. We can always check our answers using the quadratic formula.
+\newline
+
+{\bf \underline{Example 1:}} \begin{myindentpar}{1cm} Complete the square on the quadratic equation
+\newline
+
+\centerline{$f(x)= x^2 +6x - 7$}
+
+to write $f(x)$ in vertex form and determine the vertex. 
+
+\end{myindentpar}
+
+We will break this up into a step-by-step process as follows: 
+
+\begin{enumerate}
+\item Determine what b is
+\item Find $\Big(\dfrac{b}{2}\Big)^2$. Add and subtract the resulting number to $f(x)$
+\item Factor and combine constant terms
+\end{enumerate}
+
+\textbf{Step 1:}
+We can determine what $b$ is because $b$ is the coefficient of x. So...
+
+$b =6$
+
+\textbf{Step 2:} Now that we know what $b$ is we calculate and add and subtract this number to $f(x)$. So...
+
+$\Big(\dfrac{6}{2}\Big)^2 = (3)^2 = 9$ 
+
+Now we add and subtract $9$ to $f(x)$ to get 
+
+$f(x) = x^2 + 6x + 9 - 9 - 7$
+
+\textbf{Step 3:} Notice that we can now factor $x^2 +6x+9$. So we factor and combine constant terms $9 - 7$ to get 
+
+$f(x)= x^2 +6x +9 - 9 - 7=(x + 3)^2 - 16$ 
+
+And the vertex of this quadratic function is $(-3, -16)$ and we are done.
+
+\textbf{Try Some Yourself:}
+
+\begin{enumerate}
+\item $f(x)= x^2 +6x + 10$
+\item $f(x)= x^2 +4x +1$
+\item $f(x)= x^2 + 10x + 28$
+\item $f(x)= x^2 +8x - 4$
+\item $f(x)= x^2 - 2x - 1$
+\end{enumerate}
+
+{\bf \underline{Example 2:}}
+
+\begin{myindentpar}{1cm}Complete the square on the quadratic equation 
+\newline
+
+\centerline{$f(x)=3x^2 + 18x - 5$}
+
+to write $f(x)$ in vertex form and determine the vertex. 
+\end{myindentpar}
+We will break this up into a step-by-step process as follows:
+
+\begin{enumerate}
+\item Determine what $a$ and $b$ are
+\item Factor out $a$ from the first two terms. Leave the last constant term alone.
+\item Find $\Big(\dfrac{b}{2a}\Big)^2$. Add and subtract the resulting number inside the parentheses
+\item Factor, distribute and combine constant terms 
+\end{enumerate}
+
+\textbf{Step 1:} We can determine $a$ and $b$ because a is the coefficients of $x^2$ and $b$ is the coefficient of $x$. Then
+
+$a =3$
+
+$b = 18$
+
+\textbf{Step 2:} Now we factor out a from the first two terms as follows...
+
+$f(x)=3x^2 + 18x - 5 = 3(x^2 +6x) - 5$
+
+\textbf{Step 3:} Now we know what a and b are so we calculate $\Big(\dfrac{b}{2a}\Big)^2$ and add and subtract this number inside the parentheses.
+
+So $\Big(\dfrac{18}{2 \cdot 3}\Big)^2 = \Big(\dfrac{18}{6}\Big)^2 = (3)^2 = 9$
+
+Then
+
+$f(x) = 3(x^2 +6x +9 - 9) - 5$
+
+\textbf{Step 4:} Now we factor, distribute the 3 and combine constant terms so...
+
+$f(x) = 3(x^2 +6x +9 - 9) - 5$
+
+\hspace{.8cm} $=3(x+ 3)^2 - 9- 5$
+
+\hspace{.8cm}$= 3(x + 3)^2 - 27 - 5$
+
+\hspace{.8cm}$= 3(x + 3)^2 - 32$
+
+So the vertex is then $(-3, -32)$ and we are done.
+
+
+\textbf{Try Some Yourself:}
+
+\begin{enumerate}
+\item$f(x)=2x^2 + 12x +3$
+\item $f(x)=3x^2 - 12x - 5$
+\item $f(x)=4x^2 - 2x - 5$
+\item $f(x)=5x^2 - 6x - 8$
+\end{enumerate}
+
+{\bf\underline{Example 3:}}
+\begin{myindentpar}{1cm}
+We can also use completing the square to solve for the roots of a quadratic function. That is, we can find the $x$-values where the function is 0
+
+Solve for $x$ by completing the square on $2x^2 +8x - 5=0$
+\end{myindentpar}
+
+\textbf{Step 1:} $a = 2$ and $b =8$
+
+\textbf{Step 2:} $2(x^2 +4x) - 5=0$
+
+\textbf{Step 3:} $2(x^2 +4x +4 - 4) - 5=0$
+
+\textbf{Step 4:} $2(x + 2)^2 - 4- 5=0$
+
+\hspace{.45cm} $\implies 2(x + 2)^2 - 8 - 5=0$
+
+\hspace{.45cm} $\implies 2(x + 2)^2 - 13=0$
+
+This was where we reached the end of examples 1 and 2, but we need to continue on and solve for $x$...
+
+\hspace{.45cm} $\implies 2(x + 2)^2 = 13$
+
+
+\hspace{.45cm} $\implies (x + 2)^2 = \dfrac{13}{2} $
+
+\hspace{.45cm} $\implies x + 2 = \pm \sqrt{\dfrac{13}{2}}$
+
+\hspace{.45cm} $\implies x  = -2 \pm \sqrt{\dfrac{13}{2}}$
+
+And now we are done...you can check to see if this is correct by using the Quadratic Formula
+
+
+\textbf{Try Some Yourself:}
+
+\begin{enumerate}
+\item $x^2 +8x - 4=0$
+\item $x^2 - 2x - 1=0$
+\item $2x^2 + 12x +3=0$
+\item $3x^2 - 12x - 5=0$
+\item $4x^2 - 2x - 5=0$
+\item $5x^2 - 6x - 8=0$
+\end{enumerate}
+
+\textbf{Note:} Notice that these problems are the same ones I gave earlier so if you did the problems after examples 1 and examples 2 then you can just start from where you left off by setting $y = 0$ and solving for $x$
+
+
+
+\end{document}

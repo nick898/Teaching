@@ -1,0 +1,510 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{bigints}
+\usepackage{parskip}
+\usepackage{amssymb}
+\usepackage{relsize}
+\usepackage{fullpage}
+
+\usepackage{hyperref}
+
+
+
+	\addtolength{\topmargin}{-.875in}
+	\addtolength{\textheight}{1.75in}
+
+\setcounter{section}{-1}
+
+
+    \newenvironment{myindentpar}[1]%
+     {\begin{list}{}%
+             {\setlength{\leftmargin}{#1}}%
+             \item[]%
+     }
+     {\end{list}}
+
+\begin{document}
+\title{Math for Business Chapter 0 Overview}
+\date{Fall 2014}
+\maketitle
+
+\textbf{NOTE:} This chapter \textbf{WILL NOT} be covered on the midterm. But the things we learned in chapter 0 are things we often end up using so here is an overview of what we covered from Chapter 0. 
+
+\section{Chapter 0: Equations and Inequalities}
+\subsection{Linear Equations}
+- Refer to textbook as these are the simplest equations to solve. 
+\subsection{Quadratic Equations}
+
+\textbf{Def:}  A \textbf{quadratic equation} is an equation that can be written in the standard form
+\newline
+
+\centerline{$ax^2 + bx + c = 0$}
+
+where $a,b,c$ are known numbers with $a \neq 0$ and $x$ is the variable. 
+
+\underline{\textbf{Solving Quadratic Equations:}}
+
+\begin{myindentpar}{1cm}
+
+There are 4 main methods for solving quadratic equations:
+
+
+\begin{enumerate}
+\item Square Root Method
+
+\item Factoring
+
+\item Completing the Square
+
+\item Quadratic Formula
+\end{enumerate}
+
+
+\begin{enumerate}
+\item \textbf{Square Root Method}
+
+\begin{myindentpar}{1cm}
+
+The square root method is used for solving quadratic equations of the following form:
+\newline
+
+\centerline{$ax^2 = c$}
+
+\textbf{Ex 1:} Solve $2x^2 - 32 = 0$
+
+\hspace{.8cm} $\implies 2x^2 = 32$
+
+\hspace{.8cm} $\implies x^2 = 16$
+
+\hspace{.8cm} $\implies x = \pm 4$
+\end{myindentpar}
+
+\item \textbf{Factoring}
+
+Factoring is usually the preferred choice for solving a quadratic equation and it involves rewriting a quadratic equation as the product of two terms:
+
+\textbf{Ex 1:} Solve $x^2 - 7x + 12 = 0$
+
+$\implies (x - 3)(x-4) = 0$
+
+$\implies x - 3 = 0$ \hspace{1cm} or \hspace{1cm} $x - 4 = 0$
+
+$\implies x = 3$ \hspace{1.7cm} or \hspace{1cm}  $x  = 4$
+
+\textbf{Ex 2:} Solve $6x^2 - x - 12 = 0$
+
+$\implies (3x + 4)(2x -3) = 0$
+
+$\implies 3x + 4 = 0$ \hspace{1cm}  or \hspace{1cm}  $2x - 3 = 0$
+
+$\implies 3x = -4$ \hspace{1.4cm}  or \hspace{1cm}  $2x  = 3$
+
+$\implies x = \dfrac{-4}{3}$ \hspace{1.5cm}  or \hspace{1cm}  $x  = \dfrac{3}{2}$
+
+\textbf{Note:} This is knowledge that you are assumed to have already mastered by this point thus I do not go into detail about how to actually factor these quadratics. If you need help/practice with these please refer to the textbook or the internet. I am including some links to videos describing different factoring techniques: 
+
+\begin{itemize}
+\item \href{https://www.youtube.com/watch?v=3cqzGf7fms8}{MAF Factoring} (Useful for factoring equatons as in Ex 2 above)
+
+\item \href{https://www.khanacademy.org/math/algebra/multiplying-factoring-expression/factoring-quadratic-expressions/v/factoring-quadratic-expressions}{Khan Academy - Factoring Quadratic Equations} (Useful for factoring quadratic equations as in Ex 1 above)
+
+\end{itemize}
+
+\item \textbf{Completing the Square}
+
+Completing the square is a useful technique to know how to do. It's used as a trick occasionally to manipulate equations to get them in a more desirable, but also equivalent form.
+
+\textbf{Ex 1:} Complete the square to solve the following equation for $x$: 
+\newline
+
+\centerline{$x^2 + 6x - 11 = 0$}
+
+We rewrite this as:
+
+$x^2 + 6x = 11$
+
+We look at the coefficient of the term involving $x$ alone which is $6$ and calculate $\Big(\dfrac{6}{2}\Big)^2 = 9$ and then add $9$ to BOTH SIDES of the equation to get:
+\newline
+
+\centerline{$x^2 + 6x + 9 = 11 + 9$}
+
+$\implies x^2 + 6x + 9 = 20$
+
+$\implies (x+3)^2 = 20$
+
+$\implies x+3 = \pm \sqrt{20}$
+
+$\implies x \pm 2\sqrt{5} - 3$ \hspace{1cm} (since $\pm \sqrt{20} = \pm \sqrt{4 \cdot 5} = \pm \sqrt{4} \cdot \sqrt{5} = \pm 2 \sqrt{5}$)
+
+\textbf{Internet Links:}
+
+\begin{itemize}
+\item \href{https://www.khanacademy.org/math/algebra/quadratics/completing_the_square/v/solving-quadratic-equations-by-completing-the-square}{Khan Academy - Completing the Square} 
+
+\item \href{https://www.youtube.com/watch?v=bclm1tJB-3g}{mathbff - Completing the Square}
+
+\end{itemize}
+
+\item \textbf{Quadratic Formula}
+
+The quadratic formula will ALWAYS give you the zeros or roots of a quadratic equation. This is its most useful advantage plus you only have to find out what the coefficients in the quadratic are and simply plug them into the formula below:
+\newline
+
+\centerline{$x = \dfrac{-b \pm \sqrt{b^{2} - 4ac}}{2a}$}
+\end{enumerate}
+
+
+
+\end{myindentpar}
+
+\subsection{Other Types Of Equations}
+
+We learned about solving 5 other different types of equations:
+
+\begin{enumerate}
+\item Rational Equations
+
+\item Radical Equations
+
+\item Quadratic-Like Equations
+
+\item Factorable Equations
+
+\item Absolute Value Equations
+
+\end{enumerate}
+I will explain what each equation looks like in general and do one example of how to solve it.
+
+\begin{enumerate}
+\item \textbf{Rational Equations}
+
+A rational equation is any equation of the following form:
+\newline
+
+\centerline{$\dfrac{P(x)}{R(x)} = 0$}
+
+where $P(x)$ and $R(x)$ are polynomials. In order to solve rational equations we need to follow 3 steps
+
+1.) Write everything under a common denominator
+
+2.) Set the denominator = 0 and solve. We will exclude these from our solution.
+
+3.) Solve the numerator for the solution and exclude answers if necessary
+
+\textbf{Ex 1:} $\dfrac{3x}{x+2} - 4 = \dfrac{2}{x+2}$
+
+$\implies \dfrac{3x}{x+2} - \dfrac{4(x+2)}{x+2} = \dfrac{2}{x+2}$ (Step 1)
+
+Step 2: Setting the denominator  = 0 we get $x+2 = 0 \implies x = -2$ is our exclusion.  Now we ignore the denominator and simply solve the numerator in step 3:
+
+$\implies 3x - 4(x+2) = 2$
+
+$\implies 3x - 4x -8 = 2$
+
+$\implies - x - 8 = 2$
+
+$\implies - x  = 10$
+
+$\implies x = -10$ which is our only solution.
+
+
+\item \textbf{Radical Equations}
+
+Radical equations involve square roots. They often have \textbf{extraneous solutions} so it's important to check your answers if you have time. 
+
+\textbf{Ex 2:} $\sqrt{2x-1} - \sqrt{x-1} = 1$
+
+$\implies \sqrt{2x-1} = 1 + \sqrt{x-1} $
+
+$\implies \Big(\sqrt{2x-1}\Big)^{2} = \Big(1 + \sqrt{x-1}\Big)^{2} $
+
+$\implies 2x-1 = \Big(1 + \sqrt{x-1}\Big) \cdot  \Big(1 + \sqrt{x-1}\Big) $
+
+$\implies 2x-1 = 1 + 2\sqrt{x-1} + x-1 $
+
+$\implies x-1 = 2\sqrt{x-1}$
+
+$\implies \Big(x-1\Big)^{2} = \Big(2\sqrt{x-1}\Big)^{2}$
+
+$\implies \Big(x-1\Big)\cdot  \Big(x-1\Big)  = 4(x-1)$
+
+$\implies x^2 - 2x + 1 = 4x-4$
+
+$\implies x^2 - 6x + 5= 0$
+
+$\implies (x-1)(x-5)= 0$
+
+$\implies x = 1$ or $x = 5$
+
+\textbf{Check:} $x = 1 \implies \sqrt{2 - 1} - \sqrt{1-1} = \sqrt{1} - \sqrt{0} = 1 - 0 = 1$. So $x = 1$ works
+
+$x = 5 \implies \sqrt{10 - 1} - \sqrt{5-1} = \sqrt{9} - \sqrt{4} = 3 - 2 = 1$. So $x = 5$ works as well
+
+
+\item \textbf{Quadratic-Like Equations}
+
+These types of equations often look very much like a quadratic equation, but we need to do a substitution to get it in quadratic form. 
+
+\textbf{Ex 3:} Solve the following for $x$
+\newline
+
+\centerline{$x^{4/3} + 5x^{2/3} + 4 = 0$}
+
+It helps if we write the corresponding quadratic equation we'd like to transform this equation above into:
+\newline
+
+\centerline{$u^{2} + 5u + 4 = 0$}
+
+And if we match the two middle terms we automatically get the correct substitution: $u = x^{2/3}$
+
+So now we solve $u^{2} + 5u + 4 = 0$ for $u$
+
+$\implies (u+1)(u+4) = 0$
+
+$\implies u = -1$ or $u = -4$
+
+Now to get our answer in terms of $x$ we set $x^{2/3} = -1$ and $x^{2/3} = -4$ and solve for $x$.
+
+$x^{2/3} = -1 \implies \Big(x^{2/3}\Big)^{3/2} = (-1)^{3/2}$
+
+\hspace{4.5cm}$ = \sqrt{(-1)^{3}}$
+
+\hspace{4.5cm}$ = \sqrt{-1}$
+
+\hspace{4.5cm}$ = \sqrt{i^{2}}$ 
+
+\hspace{4.5cm}$= \pm i$
+
+$x^{2/3} = -4 \implies  \Big(x^{2/3}\Big)^{3/2} = (-4)^{3/2} $
+
+\hspace{4.5cm} $= \Big(\sqrt{-4}\Big)^{3}$ 
+
+\hspace{4.5cm} $= \Big(\sqrt{i^2\cdot 4}\Big)^{3}$
+
+\hspace{4.5cm} $= \Big(\pm 2i\Big)^{3}$ 
+
+\hspace{4.5cm} $= \pm 8i^3$ 
+
+\hspace{4.5cm} $= \pm 8i^2 \cdot i$
+
+\hspace{4.5cm} $ = \pm 8i$
+\item \textbf{Factorable Equations}
+
+These are equations that have common factors in each of the terms which you can usually factor out and then you are often able to factor the equation even further. 
+
+\textbf{Ex 4:} Solve the following for $x$:
+\newline
+
+\centerline{$x(x+3)^{3} - 40(x+3)^{2} = 0$}
+
+We observe that there is a common factor of $(x+3)^{2}$ in both terms so we factor that out to get
+
+$(x+3)^{2} \Big(x(x+3) - 40\Big) = 0$
+
+$\implies (x+3)^{2} \Big(x^{2}+3x - 40\Big) = 0$
+
+$\implies (x+3)^{2}(x+8)(x-5) = 0$
+
+$\implies x = -3, -8, 5$
+
+\item \textbf{Absolute Value Equations}
+
+\textbf{Def:} The \textit{absolute value} of a number $a$ is denoted by $|a|$ and defined to be 
+
+\abovedisplayskip=0pt\relax
+\[
+\lvert x \rvert =
+\begin{cases}
+x & \text{if } x \geq0\\
+-x& \text{if } x<0
+\end{cases}
+\]
+
+\textbf{Property:} If $|x| = a \implies x = a$ or $x = -a$
+
+We use the property above to solve absolute value equations:
+
+\textbf{Ex 5:} $|x-5| + 4 = 12$
+
+$\implies |x-5| = 8$
+
+Now using the property above we break it up into two equations in which we have to solve both for:
+
+$\implies x - 5 = 8$ \hspace{1cm} or \hspace{1cm} $x - 5 = -8$
+
+$\implies x  = 13$ \hspace{1.5cm} or \hspace{1cm} $x = -3$
+
+\end{enumerate}
+
+
+\subsection{Inequalities}
+
+We learned about solving 4 other different types of equations:
+
+\begin{enumerate}
+\item Linear Inequalities
+
+\item Polynomial Inequalities
+
+\item Rational Inequalities
+
+
+\item Absolute Value Inequalities
+
+\end{enumerate}
+
+Linear inequalities were the easiest  and most straightforward to solve. Solving polynomial inequalities and rational inequalities is harder than solving linear inequalities and involve many more steps. However, the steps for solving polynomial inequalities and rational inequalities are very similar. With absolute value inequalities we only need to use a property of absolute values to break the inequalities into two cases which we can solve separately. 
+
+\textbf{REMEMBER:} SWAP the inequality sign when multiplying/dividing by a negative number
+
+\begin{enumerate}
+\item \textbf{Linear Inequalities}
+
+These are the most straightforward to solve. They do not involve any tricks and you solve them as you might "expect" to solve them. I will do two examples.
+
+\textbf{Ex 1:} $4 - 3(2+x) < 5$
+
+$\implies 4 - 6-3x < 5$
+
+$\implies -2-3x < 5$
+
+$\implies -3x < 7$
+
+$\implies x > \dfrac{-7}{3}$ (\textbf{Note:} SWAP the inequality sign)
+
+The solution in \textbf{interval notation} is given as $\Big(\dfrac{-7}{3}, \infty\Big)$
+
+\textbf{Ex 2:} $-1 < \dfrac{2-x}{4} \leq \dfrac{1}{5}$
+
+$\implies -4 < 2-x \leq \dfrac{4}{5}$
+
+$\implies -6< -x \leq \dfrac{4}{5} - 2$
+
+$\implies -6< -x \leq \dfrac{4}{5} - \dfrac{10}{5}$
+
+$\implies -6< -x \leq \dfrac{-6}{5}$
+
+$\implies 6> x \geq \dfrac{6}{5}$
+
+\textbf{Solution:} $\Big(\dfrac{6}{5}, 6\Big)$
+\item \textbf{Polynomial Inequalities}
+
+- See handwritten notes on Icon
+
+\item \textbf{Rational Inequalities}
+
+- See handwritten notes on Icon
+
+\item \textbf{Absolute Value Inequalities}
+
+\textbf{Note:} Remember the following two properties when solving absolute value inequalities:
+
+\begin{itemize}
+\item $|x| < a \implies -a < x < a$ \hspace{1cm} ($|x| \leq a \implies -a \leq x \leq a$)
+\item $|x| > a \implies x<-a$ or  $x>a$ \hspace{1cm} ($|x| \geq a \implies x\leq -a$ or  $x\geq a$)
+\end{itemize}
+
+\textbf{Ex 3:} $|6 - 5x| \leq 1$
+
+This is an absolute value inequality similar to the first property above. So we use that property to express the inequality in an equivalent form which is much easier to solve:
+
+$-1 \leq 6 - 5x \leq 1$
+
+$\implies -7 \leq - 5x \leq -5$
+
+$\implies \dfrac{7}{5} \geq  x \geq 1$
+
+\textbf{Solution:} $\Big[1, \dfrac{7}{5}\Big]$
+
+\textbf{Ex 4:} $|7-2x| - 8 > 1$
+
+First we isolate the absolute value on one side
+
+$\implies |7-2x| > 9$
+
+This is an absolute value inequality similar to the second property above. So we use that property to express the inequality in an equivalent form which is much easier to solve:
+
+$\implies 7 - 2x > 9$ \hspace{1cm} or \hspace{1cm} $7-2x<-9$
+
+$\implies - 2x > 2$ \hspace{1.4cm} or \hspace{1cm} $-2x<-16$
+
+$\implies x < -1$ \hspace{1.6cm} or \hspace{1cm} $x>8$ \hspace{1cm} \textbf{Solution:} $(-\infty,-1) \cup (8,\infty)$
+
+\end{enumerate}
+
+\subsection{Graphing Equations}
+
+
+\textbf{Distance Between Two Points:} 
+\newline
+
+\centerline{$d \Big((x_{1},y_{1}),(x_{2},y_{2}\Big) = \sqrt{(x_{2}-x_{1})^2+(y_{2}-y_{1})^2}$}
+
+\textbf{Midpoint Between Two Points:} 
+\newline
+
+\centerline{$d \Big((x_{1},y_{1}),(x_{2},y_{2}\Big) =\Big(\dfrac{1}{2} \cdot (x_{1}+x_{2}), \dfrac{1}{2} \cdot (y_{1}+y_{2})\Big)$}
+
+\textbf{Standard Equation for a Circle:} 
+\newline
+
+\centerline{$(x-h)^2+(y-k)^2=r^2$}
+\vspace{.5cm}
+\centerline{\textbf{Center:} $(h,k)$ \hspace{2cm} \textbf{Radius:} $\sqrt{r^2} = r$}
+
+{\bf \underline{Symmetries}}
+
+\begin{myindentpar}{1cm}
+\textbf{Y-Axis Symmetry} - symmetrical about the y-axis. Graphically, you could reflect the function over the y-axis and it would remain the same. Some examples of functions with y-axis symmetry are $y=x^2$ and $x^2+y^2=r^2$ (a circle centered at the origin) and $x^2 + y^2 + 6y = 16$
+
+\begin{myindentpar}{2cm}
+\textbf{Algebraic Test:} Set $x = -x$ and see if equation is unchanged
+\end{myindentpar}
+
+\textbf{X-Axis Symmetry} - symmetrical about the x-axis. Graphically, you could reflect the function over the x-axis and it would remain the same. Some examples of functions with x-axis symmetry include $x=y^2$ and $x^2+y^2=r^2$ and and $x^2 -5x + y^2 = 81$
+
+\begin{myindentpar}{2cm}
+\textbf{Algebraic Test:} Set $y = -y$ and see if equation is unchanged
+\end{myindentpar}
+
+
+\textbf{Origin Symmetry} - symmetrical about the origin. Graphically, you could rotate the function 180 degrees about the origin and it would remain the same. Some examples include $y=x^3$ and $x^2+y^2=r^2$
+
+\begin{myindentpar}{2cm}
+\textbf{Algebraic Test:} Set $x = -x$ and $y = -y$ simultaneously and see if equation is unchanged
+\end{myindentpar}
+
+\end{myindentpar}
+
+{\bf \underline{Intercepts}}
+\begin{myindentpar}{1cm}
+\textbf{Y-intercept} - the point where a graph passes through the y-axis. To find the y-intercept we set $x=0$ and solve for $y$
+
+\textbf{X-intercept} - the point where a graph passes through the x-axis. To find the x-intercept we set $y=0$ and solve for $x$
+\end{myindentpar}
+
+\subsection{Lines}
+
+\textbf{Slope of a Line: } Given two different points $(x_{1},y_{1})$ and $(x_{2}, y_{2})$ the \textit{slope} of the line connecting these two points is given by
+\newline
+
+\centerline{$m = \dfrac{y_{2} - y_{1}}{x_{2}-x_{1}}$}
+\vspace{.5cm}
+
+\textbf{Point-Slope Equation of a Line:} The line with slope $m$ passing through $(x_{1}, y_{1})$ is given by
+\newline
+
+\centerline{$y - y_{1} = m(x-x_{1})$}
+\vspace{.5cm}
+
+\textbf{Slope Intercept Equation of a Line:} The line with slope $m$ has a slope-intercept form of 
+\newline
+
+\centerline{$y = mx+b$ \hspace{1cm} where b is the y-intercept}
+
+\textbf{Parallel Lines:} two lines are parallel if they have the same slope
+
+\textbf{Perpendicular Lines:} two lines are perpendicular if the slope of one line is the \textbf{negative reciprocal} of the slope of the other line
+
+\end{document}

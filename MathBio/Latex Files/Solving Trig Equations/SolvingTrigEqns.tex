@@ -1,0 +1,279 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{bigints}
+\usepackage{parskip}
+\usepackage{amssymb}
+
+    \newenvironment{myindentpar}[1]%
+     {\begin{list}{}%
+             {\setlength{\leftmargin}{#1}}%
+             \item[]%
+     }
+     {\end{list}}
+
+\begin{document}
+\title{Solving Trig Equations}
+\date{}
+\author{}
+\maketitle
+A lot of students made mistakes solving trig equations so I'll work through a few examples here and then give you some to try on your own.
+
+\textbf{Example 1: Find all $t$ in the interval $[0, 2\pi]$ satisfying}
+\newline
+
+\centerline{$\cos^{2}(t) -5\cos(t) - 6 = 0$} 
+
+This looks very similar to a quadratic equation and indeed it is if we let $x = \cos(t)$ then we get the following:
+\newline
+
+\centerline{$x^2 - 5x - 6=0$}
+
+So we can solve this using the same ways we already know. There are three ways we can solve a quadratic equation. They are
+
+\begin{enumerate}
+\item Factoring
+\item Quadratic Formula
+\item Completing the Square
+\end{enumerate}
+
+We can factor this so let's just do that...
+\newline
+
+\centerline{$x^2 - 5x - 6 = (x-6)(x+1) = 0$}
+
+And remember we let $x = \cos(t)$ so substitute $\cos(t)$ in for $x$ to get...
+\newline
+
+\centerline{$\Big(\cos(t) - 6\Big)\Big(\cos(t) +1\Big) = 0$}
+
+So we set both terms equal to $0$ and solve for $t$ to get
+\newline
+
+\centerline{$\cos(t) = 6$\hspace{1cm} AND \hspace{1cm}$\cos(t) = -1$}
+
+Well there is \textbf{no solution} to $\cos(t) = 6$, but for $\cos(t) = -1$ in the interval $[0, 2\pi]$ we get $t = \pi$ as our only solution and we are done.
+
+\textbf{Example 2: Find all values of $t$ in the interval $[0, 2\pi]$ satisfying the given equation:}
+\newline
+
+\centerline{$\Big(6\cot(t)\Big)^2 = 108$}
+
+First, we square the left hand side to get...
+\newline
+
+\centerline{$36\cot^{2}(t) = 108$}
+
+Then we divided by $36$ on both sides to get...
+\newline
+
+\centerline{$\cot^{2}(t) = 3$}
+
+Then write $\cot(t)$ in terms of both $\sin(t)$ and $\cos(t)$ to get
+\newline
+
+\centerline{$\dfrac{\cos^{2}(t)}{\sin^{2}(t)} = 3$}
+
+Multiply across by $\sin^{2}(t)$ to get
+\newline
+
+\centerline{$\cos^{2}(t) = 3\sin^{2}(t)$}
+
+And then using an identity for $\sin^{2}(t) = 1 - \cos^{2}(t)$ we get...
+\newline
+
+\centerline{$\cos^{2}(t) = 3\Big(1 - \cos^{2}(t)\Big)$}
+
+Now we distribute the 3 to get...
+\newline
+
+\centerline{$\cos^{2}(t) = 3 - 3\cos^{2}(t)$}
+
+Combining like terms we get
+\newline
+
+\centerline{$4\cos^{2}(t) = 3$}
+
+Divide by $4$ on both sides to get...
+\newline
+
+\centerline{$\cos^{2}(t) = \dfrac{3}{4}$}
+
+Now take the square root of both sides to get...
+
+\centerline{$\cos(t) = \pm \dfrac{\sqrt{3}}{2}$}
+
+So now we ask ourselves when is $\cos(t)$ equal to $\pm \dfrac{\sqrt{3}}{2}$?
+
+We will find that $t = \dfrac{\pi}{6}, \dfrac{5\pi}{6}, \dfrac{7\pi}{6}, \dfrac{11\pi}{6}$ and these are all of our $t$ in the interval $[0, 2\pi]$ so those are our answers for $t$ and we are done.
+
+\textbf{Example 3: Find all values of $t$ in the interval $[0, 2\pi]$ satisfying the given equation:}
+\newline
+
+\centerline{$4\sin(2t) - 2\tan(2t) = 0$}
+
+Before we begin, let's note that $2t$ is in the interval from $[0, 4\pi]$ since it is given that $0 <t < 2\pi$ then this implies that $0<2t<4\pi$. So at the end you will see that we have a long list of answers for $t$ because we must solve not for $t$ in $[0, 2\pi]$, but we must solve for $2t$ in $[0, 4\pi]$. It's a subtle aspect of this problem that can easily go overlooked.
+
+Rewriting $\tan(2t)$ in terms of $\sin(2t)$ and $\cos(2t)$ we get...
+\newline
+
+\centerline{$4\sin(2t) - 2\dfrac{\sin(2t)}{\cos(2t)} = 0$}
+
+Multiplying across the entire equation by $\cos(2t)$ to get rid of the denominator we get...
+\newline
+
+\centerline{$4\sin(2t)\cos(2t) - 2\sin(2t) = 0$}
+
+Now we see that $\sin(2t)$ is common to both terms so we factor that out to get...
+\newline
+
+\centerline{$\sin(2t)\Big(4\cos(2t) - 2\Big) = 0$}
+
+So we set both terms in the above product equal to $0$ to get
+\newline
+
+\centerline{$\sin(2t) = 0$ \hspace{1cm} AND \hspace{1cm} $\cos(2t) = \dfrac{1}{2}$}
+
+So we let $x = 2t$ and ask ourselves two questions:
+\begin{enumerate}
+\item When is $\sin(x) = 0$ in $[0, 4\pi]$?
+\item When is $\cos(x) = \dfrac{1}{2}$ in $[0, 4\pi]$?
+\end{enumerate}
+
+\textbf{(1.)} We know $\sin(x) = 0$ for $x = 0, \pi, 2\pi, 3\pi, 4\pi$ for $x$ in $[0, 4\pi]$
+
+Now since $x = 2t$ then we know $2t = 0, \pi, 2\pi, 3\pi, 4\pi$
+
+So $t = 0, \dfrac{\pi}{2}, \pi, \dfrac{3\pi}{2}, 2\pi$
+
+\textbf{(2.)} We know $\cos(x) = \dfrac{1}{2}$ for $x = \dfrac{\pi}{3}, \dfrac{5\pi}{3}, \dfrac{7\pi}{3}, \dfrac{11\pi}{3}$ for  $x$ in $[0, 4\pi]$
+
+Now since $x = 2t$ then we know $2t =  \dfrac{\pi}{3}, \dfrac{5\pi}{3}, \dfrac{7\pi}{3}, \dfrac{11\pi}{3}$
+
+So $t =  \dfrac{\pi}{6}, \dfrac{5\pi}{6}, \dfrac{7\pi}{6}, \dfrac{11\pi}{6}$
+
+So our answers for $t$ are...
+\newline
+
+\centerline{\textbf{Solution:} $t = 0, \dfrac{\pi}{2}, \pi, \dfrac{3\pi}{2}, 2\pi, \dfrac{\pi}{6}, \dfrac{5\pi}{6}, \dfrac{7\pi}{6}, \dfrac{11\pi}{6}$ }
+
+\textbf{Example 4: Find all values of $x$ in the interval $[0, 2\pi]$ that satisfy the given equation:}
+\newline
+
+\centerline{$\sin(2x) = \sqrt{3}\cos(x)$}
+
+We know $\sin(2x) = 2\sin(x)\cos(x)$ because it's one of the trig formulas we went over in class so let's replace $\sin(2x)$ with $2\sin(x)\cos(x)$ in the above equation to get...
+\newline
+
+\centerline{$2\sin(x)\cos(x) = \sqrt{3}\cos(x)$}
+
+Now we subtract $\sqrt{3}\cos(x)$ over to the left hand side to get...
+\newline
+
+\centerline{$2\sin(x)\cos(x) - \sqrt{3}\cos(x) = 0$}
+
+And we notice that $\cos(x)$ is common to both terms so let's factor that out to get...
+
+\centerline{$\cos(x)\Big(2\sin(x) - \sqrt{3}\Big) = 0$}
+
+And now we set both terms in the product equal to $0$ to get
+\newline
+
+\centerline{$\cos(x) = 0$\hspace{1cm} AND \hspace{1cm} $\sin(x) = \dfrac{\sqrt{3}}{2}$}
+
+So we ask ourselves two questions:
+\begin{enumerate}
+\item When is $\cos(x) = 0$ for $x$ in $[0, 2\pi]$?
+\item When is $\sin(x) = \dfrac{\sqrt{3}}{2}$ for $x$ in $[0, 2\pi]$?
+\end{enumerate}
+
+\textbf{(1.)} We know that $\cos(x) = 0$ for $x = \dfrac{\pi}{2}, \dfrac{3\pi}{2}$ for $x$ in $[0, 2\pi]$ 
+
+\textbf{(2.)} We know that $\sin(x) = \dfrac{\sqrt{3}}{2}$ for $x = \dfrac{\pi}{3}, \dfrac{2\pi}{3}$ for $x$ in $[0, 2\pi]$ 
+
+So our answers for $x$ are $x = \dfrac{\pi}{2}, \dfrac{3\pi}{2},  \dfrac{\pi}{3}, \dfrac{2\pi}{3}$ and we are done.
+
+\textbf{Example 5: Find all values of $x$ in the interval $[0, 2\pi]$ that satisfy the given equation:}
+\newline
+
+\centerline{$2\sin^{2}(x) - \cos(x) - 1 = 0$}
+ 
+We know $\sin^{2}(x) = 1 - \cos^{2}(x)$ so we replace  $\sin^{2}(x)$ with $1 - \cos^{2}(x)$ in the above equation to get...
+\newline
+
+\centerline{$2\Big(1 - \cos^{2}(x)\Big) - \cos(x) - 1 = 0$}
+
+Distributing the $2$ we get...
+\newline
+
+\centerline{$2 - 2\cos^{2}(x)- \cos(x) - 1 = 0$}
+
+And we combine like terms to get...
+\newline
+
+\centerline{$-2\cos^{2}(x) - \cos(x) + 1 = 0$}
+
+This looks just like a quadratic equation and indeed it is if we let $y = \cos(x)$ to get...
+\newline
+
+\centerline{$-2y^2 - y + 1 = 0$}
+
+So we can solve this using the same ways we already know. There are three ways we can solve a quadratic equation. They are
+
+\begin{enumerate}
+\item Factoring
+\item Quadratic Formula
+\item Completing the Square
+\end{enumerate}
+
+I factored in Example 1 so let's use the quadratic formula here
+
+So then we have that
+\newline
+
+\centerline{$y = \cos(x) = \dfrac{1 \pm \sqrt{1 - (4)(-2)(1)}}{2(-2)}$}
+
+\hspace{5.5cm} $ = \dfrac{1 \pm \sqrt{9}}{-4}$
+
+\hspace{5.5cm} $ = \dfrac{1 \pm 3}{-4}$
+
+\hspace{5.5cm} $ = -1, \dfrac{1}{2}$
+
+So we solve these two equations for $x$ in $[0, 2\pi]$:
+\newline
+
+\centerline{$\cos(x) = -1$\hspace{1cm} AND \hspace{1cm} $\cos(x) = \dfrac{1}{2}$}
+
+So our solutions for $x$ is $x = \pi, \dfrac{\pi}{3}, \dfrac{5\pi}{3}$ and we are done.
+
+\textbf{Try Some Yourself:}
+
+\begin{enumerate}
+\item $\cos^{2}(t) + 9\cos(t) + 8 = 0$
+\item $2\sin^{2}(t) - 3\sin(t) + 1 = 0$
+\item $18\tan(t) - 18 = 0$
+\item $\Big(3\cot(t)\Big)^{2} = 27$
+\item $2\sqrt{3}\sin(2t) - \sqrt{3}\tan(2t) = 0$
+\item $-\sin(2x) = \sqrt{2}\cos(x)$
+\item $2\sin^{2}(x) + 3\cos(x) - 3=0$
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
